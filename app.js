@@ -82,6 +82,13 @@ function filterTodo(e) {
         } else {
           todo.style.display = "none";
         }
+        break;
+        case "tomorrowleted":
+          if (!todo.classList.contains("completed")) {
+            todo.style.display = "flex";
+          } else {
+            todo.style.display = "none";
+          }
     }
   });
 }
